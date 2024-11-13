@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Madani Arabic';
     src: local('Madani Arabic'),
@@ -245,26 +244,35 @@ span {
     padding: 20px;
 }
 
+#div-project h2 {
+    font-size: 38px;
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
 
 #project {
     border: 1px solid white;
-    border-radius: 20px ;
-
+    border-radius: 20px;
     width: 90%;
-    height: 300px;
+    min-height: 300px;
+    height: fit-content;
     max-width: 450px;
     margin: auto;
     margin-top: 30px;
     position: relative;
     display: flex;
     position: relative;
-    
+    overflow-x: hidden;
+
 }
 
-#project img{
+#project img {
     position: absolute;
-    top: 0;
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 220px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -276,14 +284,13 @@ span {
     width: 100%;
     height: 220px;
     text-align: center;
-    opacity: 0; /* Invisible por defecto */
+    opacity: 0;
     transition: opacity 0.5s;
     position: absolute;
     justify-content: center;
     align-content: center;
     z-index: 2;
     background-color: #0d1117;
-
 
 }
 
@@ -297,11 +304,12 @@ span {
     font-size: xx-large;
 }
 
-#p-FixGarage-info{
+#p-FixGarage-info {
     position: absolute;
     bottom: 0;
-    width: 100%;
     height: 25%;
+    z-index: 3;
+    width: 100%;
     color: white;
     font-size: 15px;
     text-align: left;
@@ -318,7 +326,28 @@ span {
     font-size: xx-large;
 }
 
-#p-GraveLock-info{
+#p-GraveLock-info {
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    padding: 15px;
+    padding-top: 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#p-ModOrganizer {
+    color: #5ce1e6;
+
+    font-size: xx-large;
+}
+
+#p-ModOrganizer-info {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -375,18 +404,20 @@ span {
 #technology-content {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    width: 950px;
-    height: 200px;
+    max-width: 950px;
     margin-top: 30px;
 
 
 }
 
 .technology {
+    position: relative;
+    display: flex;
     height: 64px;
-    width: 64px;
+    min-width: 64px;
     margin-top: 30px;
 }
 
@@ -397,24 +428,49 @@ span {
 
 
 #html {
+    border-radius: 8px;
     background-size: cover;
-    background-image: url('../assets/images/html5-icon.png');
+    background-image: url('../assets/images/technologies/html5-icon.png');
 }
 
 #css {
+    border-radius: 8px;
     background-size: cover;
-    background-image: url('../assets/images/css3-icon.png');
+    background-image: url('../assets/images/technologies/css3-icon.png');
 }
 
 #javascript {
+    border-radius: 8px;
     background-size: cover;
-    background-image: url('../assets/images/javascript-icon.png');
+    background-image: url('../assets/images/technologies/javascript-icon.png');
 }
 
 #django {
+    border-radius: 8px;
     background-size: cover;
-    background-image: url('../assets/images/django-icon.png');
+    background-image: url('../assets/images/technologies/django-icon.png');
 }
+
+#python {
+    border-radius: 8px;
+    background-size: cover;
+    background-image: url('../assets/images/technologies/python-icon.png');
+}
+
+#java {
+    border-radius: 8px;
+    background-size: cover;
+    background-color: white;
+    background-image: url('../assets/images/technologies/java-icon.png');
+}
+
+#mysql {
+    border-radius: 8px;
+    background-size: cover;
+    background-color: white;
+    background-image: url('../assets/images/technologies/mysql-icon.png');
+}
+
 
 
 
@@ -439,8 +495,9 @@ span {
 
 #div-education h1 {
     font-size: 58px;
-    height: 100px;
+    height: 120px;
     text-align: center;
+    padding: 20px;
 }
 
 #p-education {
@@ -455,14 +512,105 @@ span {
 }
 
 
+/* #div-experience {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+#experience-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+#div-experience h1 {
+    font-size: 58px;
+    height: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+#p-experience {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 20px;
+
+}
+
+#p-experience span {
+    font-size: 30px
+} */
+
+
+/*  -------------------------------- div contact me -------------------------------- */
+
+
+#div-contact {
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+}
+
+#p-contact span {
+    font-size: calc(10px + 0.6vw);
+}
+
+#contact-content {
+    max-width: 700px;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+#div-contact h1 {
+    font-size: 58px;
+    height: 100px;
+    text-align: center;
+}
+
+#p-contact {
+    margin: auto;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#p-contact h2 {
+    padding-bottom: 5px;
+}
+
+#p-contact a {
+    text-decoration: none;
+
+}
 
 
 
 
 
+@media only screen and (max-device-width : 400px) {
 
+    /* #project {
+        height: 250px
+    }
 
-@media only screen and (max-device-width : 500px) {}
+    #info-project {
+        height: 20px;
+    }
+
+    
+    #p-FixGarage-info{
+        height: 90px;
+    }
+    #p-GraveLock-info{
+        height: 90px;
+    }
+    #p-ModOrganizer-info{
+        height: 100px;
+    } */
+}
 
 
 @media only screen and (max-device-width : 1000px) {
@@ -480,7 +628,6 @@ span {
 
     #about-image {
         display: none;
-
     }
 
 
@@ -491,6 +638,7 @@ span {
     #p-button {
         width: 100%;
     }
+
 
 
     #div-about {
@@ -511,6 +659,9 @@ span {
         max-width: 90%
     }
 
+    #education-content {
+        max-width: 90%
+    }
 
 
 
@@ -566,6 +717,29 @@ span {
     #div-navegator-li {
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+
+
+
+
+    #div-experience h1 {
+        font-size: 40px;
+    }
+
+    #div-project h1 {
+        font-size: 40px;
+    }
+
+    #div-project h2 {
+        font-size: 30px;
+    }
+
+    #div-education h1 {
+        font-size: 40px;
+    }
+
+    #div-contact h1 {
+        font-size: 40px;
     }
 
 }
