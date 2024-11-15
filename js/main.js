@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Configuración de Intersection Observer
     const observerOptions = {
         root: null,         // Usa el viewport como contenedor
-        threshold: 0.6      // Detecta cuando el 60% de la sección es visible
+        threshold: 0.35      // Detecta cuando el 60% de la sección es visible
     };
 
     // Instancia de Intersection Observer
@@ -45,15 +45,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function menuButton(value) {
 
-    const valuebutton = document.getElementById("button-show-menu");
-    console.log(value)
+    const valuebutton = document.getElementById("button-showmenu");
 
-    if(value == "show"){
-        hideMenu()
-        valuebutton.value = "hide"
-    }else{
-        showMenu()
-        valuebutton.value = "show"
+    console.log("Valor actual del botón:", valuebutton.value);
+
+    let anchoVentana = window.innerWidth;
+
+    if (anchoVentana <= 1250) {
+        if (valuebutton.value === "show") {
+            hideMenu();
+            valuebutton.value = "hide";
+            console.log("Nuevo valor del botón:", valuebutton.value);
+        } else {
+            showMenu();
+            valuebutton.value = "show";
+            console.log("Nuevo valor del botón:", valuebutton.value);
+        }
     }
 
 }
@@ -68,7 +75,7 @@ function hideMenu() {
     const divLanguageOpt = document.getElementById("div-language-opt");
     const divStyleOpt = document.getElementById("div-style-opt");
     const divShowMenu = document.getElementById("div-showmenu");
-    const divShowMenuButton = document.getElementById("button-show-menu");
+    const divShowMenuButton = document.getElementById("button-showmenu");
     const divNavigatorUl = document.querySelector("#div-navegator-ul");
     const divNavigatorIl = document.querySelectorAll("#div-navegator-li");
 

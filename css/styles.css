@@ -25,6 +25,8 @@ body {
 #div-menu {
     background-color: #0d1117;
     display: grid;
+    position: fixed;
+    z-index: 1;
     grid-template-columns: 20% 60% 20%;
     width: 100%;
     height: 60px;
@@ -128,8 +130,9 @@ span {
 #div-about {
     height: 100dvh;
     padding-bottom: 80px;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-left: 80px;
+    
 }
 
 #about-content {}
@@ -187,6 +190,7 @@ span {
 #div-experience {
     width: 100%;
     margin-bottom: 50px;
+    padding-top: 60px;
 }
 
 
@@ -197,7 +201,7 @@ span {
 }
 
 #div-experience h1 {
-    font-size: 58px;
+    font-size: 52px;
     height: 120px;
     text-align: center;
     padding: 20px;
@@ -223,12 +227,15 @@ span {
 #div-project {
     width: 100%;
     margin-bottom: 50px;
+    padding-top: 60px;
+
 }
 
 
 #project-content {
+
     padding-top: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -253,6 +260,7 @@ span {
 
 
 #project {
+    width: 300px;
     border: 1px solid white;
     border-radius: 20px;
     width: 90%;
@@ -262,119 +270,75 @@ span {
     margin: auto;
     margin-top: 30px;
     position: relative;
-    display: flex;
-    position: relative;
     overflow-x: hidden;
 
 }
 
+
 #project img {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    height: 220px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
 }
 
-
 #info-project {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-    height: 220px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    z-index: 2;
-    background-color: #0d1117;
-
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 #info-project p {
+    margin: 0;
+    font-size: 24px;
     font-weight: bold;
-    width: 100%;
 }
 
-#p-FixGarage {
-    color: #5ce1e6;
-    font-size: xx-large;
+#info-project button {
+
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
 }
+
+#project:hover img {
+    transform: scale(1.05);
+}
+
+#project:hover #info-project {
+    opacity: 1;
+}
+
+
+
+
 
 #p-FixGarage-info {
-    position: absolute;
-    bottom: 0;
-    height: 25%;
-    z-index: 3;
-    width: 100%;
-    color: white;
-    font-size: 15px;
-    text-align: left;
     padding: 15px;
-    padding-top: 2px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-}
-
-#p-GraveLock {
-    color: #5ce1e6;
-
-    font-size: xx-large;
+    text-align: center;
 }
 
 #p-GraveLock-info {
-    overflow-x: hidden;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    font-size: 15px;
-    text-align: left;
     padding: 15px;
-    padding-top: 2px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-}
-
-#p-ModOrganizer {
-    color: #5ce1e6;
-
-    font-size: xx-large;
+    text-align: center;
 }
 
 #p-ModOrganizer-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 25%;
-    color: white;
-    font-size: 15px;
-    text-align: left;
     padding: 15px;
-    padding-top: 2px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-}
-
-#github {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    background-color: #0d1117;
-    border-radius: 40px;
-    background-image: url('../assets/images/github-mark-white.png');
-    background-size: cover;
-    cursor: pointer;
-    margin-bottom: 50px;
-
-    margin-right: 20px;
+    text-align: center;
 }
 
 #info {
@@ -389,10 +353,12 @@ span {
     background-size: cover;
     cursor: pointer;
     margin-bottom: 50px;
+    transition: transform 0.2s;
+
 }
 
 #info-project button:hover {
-    scale: 130%;
+    transform: scale(1.3);
 }
 
 #project:hover #info-project {
@@ -482,10 +448,12 @@ span {
 #div-education {
     width: 100%;
     margin-bottom: 50px;
+    padding-top: 60px;
+
 }
 
 #p-education span {
-    font-size: calc(10px + 0.6vw);
+    font-size: 19px;
 }
 
 #education-content {
@@ -510,37 +478,6 @@ span {
 #div-showmenu {
     display: none;
 }
-
-
-/* #div-experience {
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-
-
-#experience-content {
-    max-width: 700px;
-    margin: auto;
-}
-
-#div-experience h1 {
-    font-size: 58px;
-    height: 120px;
-    text-align: center;
-    padding: 20px;
-}
-
-#p-experience {
-    border-top: 1px solid white;
-    padding-top: 20px;
-    margin-top: 20px;
-
-}
-
-#p-experience span {
-    font-size: 30px
-} */
 
 
 /*  -------------------------------- div contact me -------------------------------- */
@@ -586,87 +523,8 @@ span {
 
 }
 
-
-
-
-
-@media only screen and (max-device-width : 400px) {
-
-    /* #project {
-        height: 250px
-    }
-
-    #info-project {
-        height: 20px;
-    }
-
+@media only screen and (max-device-width : 1250px) {
     
-    #p-FixGarage-info{
-        height: 90px;
-    }
-    #p-GraveLock-info{
-        height: 90px;
-    }
-    #p-ModOrganizer-info{
-        height: 100px;
-    } */
-}
-
-
-@media only screen and (max-device-width : 1000px) {
-
-    #div-about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #about-content {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-
-    #about-image {
-        display: none;
-    }
-
-
-    #p-info {
-        width: 100%;
-    }
-
-    #p-button {
-        width: 100%;
-    }
-
-
-
-    #div-about {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-
-    #experience-content {
-        max-width: 90%
-    }
-
-    #project-content {
-        max-width: 90%
-    }
-
-    #technology-content {
-        max-width: 90%
-    }
-
-    #education-content {
-        max-width: 90%
-    }
-
-
-
-
-
     #div-menu {
 
         grid-template-columns: 20% 60% 20%;
@@ -718,6 +576,67 @@ span {
         padding-top: 0px;
         padding-bottom: 0px;
     }
+
+}
+
+@media only screen and (max-device-width : 1000px) {
+
+    #div-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-content {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #about-image {
+        display: none;
+    }
+
+
+    #p-info {
+        width: 100%;
+    }
+
+    #p-button {
+        width: 100%;
+    }
+
+
+
+    #div-about {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    #experience-content {
+        max-width: 90%
+    }
+
+    #project-content {
+        max-width: 90%
+    }
+
+    #technology-content {
+        max-width: 90%
+    }
+
+    #education-content {
+        max-width: 90%
+    }
+
+    #contact-content {
+        max-width: 90%
+    }
+
+
+
+
+
 
 
 

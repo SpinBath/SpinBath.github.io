@@ -14,20 +14,20 @@
     <div id="div-menu">
         <div id="div-language-opt">
             <select id="select-lang">
-                <option>EN</option>
                 <option>ES</option>
+                <option>EN</option>
             </select>
         </div>
         <nav id="div-navegator">
             <ul id="div-navegator-ul">
-                <li id="div-navegator-li"><a id="a-about" href="#div-about">About</a></li>
-                <li id="div-navegator-li"><a id="a-experience" href="#div-experience">Experience</a></li>
-                <li id="div-navegator-li"><a id="a-project" href="#div-project">Projects</a></li>
-                <li id="div-navegator-li"><a id="a-education" href="#div-education">Education</a></li>
-                <li id="div-navegator-li"><a id="a-contact" href="#div-contact">Contact</a></li>
+                <li id="div-navegator-li"><a id="a-about" href="#div-about" onclick="menuButton()">About</a></li>
+                <li id="div-navegator-li"><a id="a-experience" href="#div-experience" onclick="menuButton()">Experience</a></li>
+                <li id="div-navegator-li"><a id="a-project" href="#div-project" onclick="menuButton()">Projects</a></li>
+                <li id="div-navegator-li"><a id="a-education" href="#div-education" onclick="menuButton()">Education</a></li>
+                <li id="div-navegator-li"><a id="a-contact" href="#div-contact" onclick="menuButton()">Contact</a></li>
             </ul>
             <div id="div-showmenu">
-                <button id="button-showmenu">menu</button>
+                <button id="button-showmenu" type="button" onclick="menuButton()" value="hide">menu</button>
             </div>
         </nav>
         <div id="div-style-opt">
@@ -51,7 +51,12 @@
                 <p id="p-job">FullStack<br>Developer</p>
                 <p id="p-info">Graduated in Cybersecurity in Information Technology Environments (CETI), passionate
                     about software development and the field of cybersecurity.</p>
-                <p id="p-button"><button>Download CV</button></p>
+
+                <p id="p-button">
+                    <a href="assets/docs/CV - David Sánchez Albarrán.pdf" target="_blank" download>
+                        <button>Download CV</button>
+                    </a>
+                </p>
 
             </div>
 
@@ -104,7 +109,6 @@
                     <img src="assets/images/FixGarage.png">
                     <div id="info-project">
                         <p id="p-FixGarage">Fix Garage</p>
-                        <a href="https://github.com/XRayBinary/FixGarage"><button id="github"></button></a>
                         <a href="https://github.com/XRayBinary/FixGarage"><button id="info"></button></a>
 
                     </div>
@@ -112,12 +116,11 @@
                         model.</p>
                 </div>
 
-                <div id="project">
+                 <div id="project">
                     <img src="assets/images/GraveLock.png">
                     <div id="info-project">
                         <p id="p-GraveLock">Grave Lock</p>
-                        <a href="https://github.com/XRayBinary/Grave-Lock"><button id="github"></button></a>
-                        <a href="https://github.com/XRayBinary/Grave-Lock"><button id="info"></button></a>
+                       <a href="https://github.com/XRayBinary/Grave-Lock"><button id="info"></button></a>
                     </div>
                     <p id="p-GraveLock-info">Cybersecurity tool designed for password encryption, decryption of hashes
                         using dictionaries.</p>
@@ -127,13 +130,15 @@
                     <img src="assets/images/ModOrganizer.png">
                     <div id="info-project">
                         <p id="p-ModOrganizer">Mod Organizer FS22</p>
-                        <a href="https://github.com/XRayBinary/Mod-Organizer"><button id="github"></button></a>
-                        <a href="https://github.com/XRayBinary/Mod-Organizer"><button id="info"></button></a>
+                      <a href="https://github.com/XRayBinary/Mod-Organizer"><button id="info"></button></a>
                     </div>
-                    <p id="p-ModOrganizer-info">Tool designed to organize and categorize the different types of mods available for Farming Simulator 2022.</p>
+                    <p id="p-ModOrganizer-info">Tool designed to organize and categorize the different types of mods
+                        available for Farming Simulator 2022.</p>
                 </div>
 
-            </div><br>
+            </div>
+            
+            <br>
 
             <h2>TECHNOLOGIES</h2>
             <div id="technology-content">
@@ -196,9 +201,10 @@
                 <h1>CONTACT</h1>
                 <div id="contact-content">
                     <div id="p-contact">
-                        <h2>Gmail</h2>     david.sanchezalb@gmail.com<br><br>
-                        <h2>Linkedin</h2>   linkedin.com/in/d-vid<a href="https://www.linkedin.com/in/d-vid/">🔗</a><br><br>
-                        <h2>Github</h2>     github.com/XRayBinary<a href="https://www.linkedin.com/in/d-vid/">🔗</a><br><br>
+                        <h2>Gmail</h2> david.sanchezalb@gmail.com<br><br>
+                        <h2>Linkedin</h2> linkedin.com/in/d-vid<a
+                            href="https://www.linkedin.com/in/d-vid/">🔗</a><br><br>
+                        <h2>Github</h2> github.com/XRayBinary<a href="https://www.linkedin.com/in/d-vid/">🔗</a><br><br>
                     </div>
                 </div>
             </div>
@@ -210,8 +216,4 @@
     </script>
 
 </body>
-<footer>
-
-</footer>
-
 </html>
