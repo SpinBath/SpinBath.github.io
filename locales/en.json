@@ -1,0 +1,44 @@
+{
+  "nav": {
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "education": "Education",
+      "contact": "Contact"
+  },
+  "about": {
+      "name": "Hello, I am <span>David Sánchez</span>",
+      "job": "Developer<br>FullStack",
+      "info": "Graduated in Cybersecurity in Information Technology Environments (CETI), passionate about software development and the field of cybersecurity.",
+      "button": "Download CV"
+  },
+  "experience": {
+      "title": "EXPERIENCE",
+      "job1": "Mar 2023 - May 2023 <br> Carbajosa de la Sagrada, Salamanca | Spain<br><br> <span>Junior Developer (FCT)</span> <br> NTT DATA Salamanca <br><br> <li>Development of utilities for the service.</li> <li>Database maintenance and management.</li><br> Main technologies of the service: <br><br> Oracle SQL Developer - Visual Basic - Vue.js - Python<br>",
+      "job2": "Apr 2019 - Jun 2021 <br>Peñaranda de Bracamonte, Salamanca | Spain <br><br><span>Maintenance Technician (FCT)</span> <br>Peñaranda de Bracamonte Town Hall <br><br><li>Maintenance and repair of computer equipment</li><li>Network maintenance</li><br>"
+  },
+  "projects": {
+      "title": "PROJECTS",
+      "FixGarage": {
+          "description": "A minimalist web application that performs basic CRUD operations on a sample data model."
+      },
+      "GraveLock": {
+          "description": "A cybersecurity tool designed for password encryption and hash decryption using dictionaries."
+      },
+      "ModOrganizer": {
+          "description": "A tool designed to organize and categorize the different types of mods available for Farming Simulator 2022."
+      }
+  },
+  "technologies": {
+      "title": "TECHNOLOGIES"
+  },
+  "education": {
+      "title": "EDUCATION",
+      "grade1": "2023 - 2024<br> IES Venancio Blanco | Salamanca<br> <span>Specialization in Cybersecurity in Information Technology Environments (CETI)</span><br>",
+      "grade2": "2021 - 2023<br> IES Venancio Blanco | Salamanca<br> <span>Multiplatform Application Development (DAM)</span><br>",
+      "grade3": "2019 - 2021<br> IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte<br> <span>Microcomputer Systems and Networks (SMR)</span><br>"
+  },
+  "contact": {
+      "title": "CONTACT"
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "nav": {
+        "about": "Sobre mi",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "education": "Estudios",
+        "contact": "Contacto"
+    },
+    "about": {
+        "name": "Hola, soy <span>David Sánchez</span>",
+        "job": "Developer<br>FullStack",
+        "info": "Graduado en Ciberseguridad en Entornos de las Tecnologías de la Información (CETI), apasionado por el desarrollo de software y el campo de la ciberseguridad.",
+        "button": "Descargar CV"
+    },
+    "experience": {
+        "title": "EXPERIENCIA",
+        "job1": "Mar 2023 - May 2023 <br> Carbajosa de la Sagrada, Salamanca | España<br><br> <span>Developer Junior (FCT)</span> <br> NTT DATA Salamanca <br><br> <li>Desarrollo de utilidades para el servicio.</li> <li>Mantenimiento y gestión de bases de datos.</li><br> Principales tecnologías del servicio: <br><br> Oracle SQL Developer - Visual Basic - Vue.js - Python<br>",
+        "job2": "Abr 2019 - Jun 2021 <br>Peñaranda de Bracamonte, Salamanca | España <br><br><span>Técnico de mantenimiento (FCT)</span> <br>Ayuntamiento de Peñaranda de Bracamonte <br><br><li>Mantenimiento y reparación de equipos informáticos</li><li>Mantenimiento de la red</li><br>"
+    },
+    "projects": {
+        "title": "PROYECTOS",
+        "FixGarage": {
+            "description": "Una aplicación web minimalista que realiza operaciones CRUD básicas en un modelo de datos de ejemplo."
+        },
+        "GraveLock": {
+            "description": "Herramienta de ciberseguridad diseñada para la encriptación de contraseñas y descifrado de hashes usando diccionarios."
+        },
+        "ModOrganizer": {
+            "description": "Herramienta diseñada para organizar y categorizar los diferentes tipos de mods disponibles para Farming Simulator 2022."
+        }
+    },
+    "technologies": {
+        "title": "TECNOLOGIAS"
+    },
+    "education": {
+        "title": "ESTUDIOS",
+        "grade1": "2023 - 2024<br> IES Venancio Blanco | Salamanca<br> <span>Especialización en Ciberseguridad en Entornos de las Tecnologías de la Información (CETI)</span><br>",
+        "grade2": "2021 - 2023<br> IES Venancio Blanco | Salamanca<br> <span>Desarrollo de Aplicaciones Multiplataforma (DAM)</span><br>",
+        "grade3": "2019 - 2021<br> IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte<br> <span>Sistemas Microinformáticos y Redes (SMR)</span><br>"
+    },
+    "contact": {
+        "title": "CONTACTO"
+    }
+}
