@@ -20,17 +20,17 @@ async function loadTranslations(lang) {
 // Función para actualizar los textos en la página
 function updateTexts() {
     document.querySelectorAll('[data-i18n]').forEach(element => {
-      const keys = element.getAttribute('data-i18n').split('.'); // Obtén las claves
-      let text = translations;
-      
-      // Recorre las claves del JSON
-      keys.forEach(key => {
-        text = text[key] || ''; // Si la clave no existe, usa un string vacío
-      });
-  
-      element.innerHTML = text; // Actualiza el contenido
+        const keys = element.getAttribute('data-i18n').split('.'); // Obtén las claves
+        let text = translations;
+
+        // Recorre las claves del JSON
+        keys.forEach(key => {
+            text = text[key] || ''; // Si la clave no existe, usa un string vacío
+        });
+
+        element.innerHTML = text; // Actualiza el contenido
     });
-  }
+}
 
 // Cambiar idioma (ejemplo: botón de selección)
 document.getElementById('select-lang').addEventListener('change', (event) => {
@@ -39,13 +39,6 @@ document.getElementById('select-lang').addEventListener('change', (event) => {
 
 // Inicializar con el idioma predeterminado
 loadTranslations(currentLang);
-
-
-
-
-
-
-
 
 
 
@@ -180,7 +173,6 @@ function showMenu() {
     const divNavigatorUl = document.getElementById("div-navegator-ul");
     const divNavigatorIl = document.querySelectorAll("#div-navegator-li");
 
-    // Aplicación de estilos
     divMenu.style.gridTemplateColumns = "20% 60% 20%";
     divMenu.style.fontSize = "14px";
     divMenu.style.height = "60px";
@@ -190,7 +182,6 @@ function showMenu() {
     divLanguageOpt.style.display = "block";
     divStyleOpt.style.display = "block";
 
-    // Estilos de <select> y <button> en #div-menu
     const menuSelects = divMenu.querySelectorAll("select");
     const menuButtons = divMenu.querySelectorAll("button");
 
@@ -221,3 +212,26 @@ function showMenu() {
         item.style.paddingBottom = "0px";
     });
 }
+
+
+const colorSwitch = document.getElementById("button-style-opt");
+
+
+function cambiaTema() {
+
+    console.log(colorSwitch.value)
+
+    if (colorSwitch.value === "dark") {
+        document.documentElement.setAttribute('tema', 'light');
+        colorSwitch.value = "light"
+        colorSwitch.innerHTML="☀️"
+    } else {
+        document.documentElement.setAttribute('tema', 'dark');
+        colorSwitch.value = "dark"
+        colorSwitch.innerHTML="🌙"
+
+
+    } 
+}
+
+/* colorSwitch.addEventListener('change', cambiaTema); */

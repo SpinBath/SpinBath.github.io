@@ -5,6 +5,30 @@
 }
 
 
+:root {
+
+    --color-fuente: white;
+    --color-border: white;
+    --color-fuente-button: #0d1117;
+    --color-fondo: #0d1117;
+    --color-span: #5ce1e6;
+    --color-navegator: #5ce1e6;
+
+}
+
+[tema="light"] {
+
+    --color-fuente: #0d1117;
+    --color-border: #0d1117;
+    --color-fuente-button: white;
+    --color-fondo: whitesmoke;
+    --color-span: rgb(0, 89, 255);
+    --color-navegator: rgb(0, 89, 255);
+
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +38,8 @@
 
 
 body {
-    background-color: #0d1117;
-    color: white;
+    background-color: var(--color-fondo);
+    color: var(--color-fuente);
 }
 
 
@@ -23,7 +47,9 @@ body {
 
 
 #div-menu {
-    background-color: #0d1117;
+
+    background-color: var(--color-fondo);
+    border-bottom: 3px solid var(--color-border);
     display: grid;
     position: fixed;
     z-index: 1;
@@ -42,15 +68,15 @@ body {
 
 #div-language-opt select,
 option {
-    color: white;
-    background-color: #0d1117;
+    color: var(--color-fuente);
+    background-color: var(--color-fondo);
     border: 0;
     font-size: 18px;
 
 }
 
 #div-language-opt select:hover {
-    color: #5ce1e6;
+    color: var(--color-navegator);
 }
 
 
@@ -69,20 +95,20 @@ option {
 
 #div-navegator li:hover {
     transform: scale(1.2);
-    color: #5ce1e6;
+    color: var(--color-navegator);
 }
 
 #div-navegator a {
     text-decoration: none;
-    color: white;
+    color: var(--color-fuente);
 }
 
 #div-navegator a.active {
-    color: #5ce1e6;
+    color: var(--color-navegator);
 }
 
 #div-navegator a:hover {
-    color: #5ce1e6;
+    color: var(--color-navegator);
 }
 
 #div-style-opt {
@@ -90,7 +116,7 @@ option {
 }
 
 #div-style-opt button {
-    background-color: #0d1117;
+    background-color: var(--color-fondo);
     border: 0;
     font-size: 18px;
     transition: transform 0.3s ease;
@@ -120,7 +146,7 @@ option {
 }
 
 span {
-    color: #5ce1e6;
+    color: var(--color-span);
 }
 
 
@@ -132,7 +158,7 @@ span {
     padding-bottom: 80px;
     padding-top: 80px;
     padding-left: 80px;
-    
+
 }
 
 #about-content {}
@@ -167,7 +193,8 @@ span {
 }
 
 #p-button button {
-    background-color: #5ce1e6;
+    background-color: var(--color-navegator);
+    color: var(--color-fuente-button);
     height: 45px;
     width: 220px;
     border-radius: 50px;
@@ -208,7 +235,7 @@ span {
 }
 
 #p-experience {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--color-border);
     padding-top: 20px;
     margin-top: 20px;
 
@@ -261,7 +288,9 @@ span {
 
 #project {
     width: 300px;
-    border: 1px solid white;
+    border: 1px solid var(--color-border);
+    background-color: #0d1117;
+    color: white;
     border-radius: 20px;
     width: 90%;
     min-height: 300px;
@@ -346,7 +375,7 @@ span {
     width: 40px;
     height: 40px;
     background-color: #0d1117;
-    border: 1px solid white;
+    border: 1px solid var(--color-border);
 
     border-radius: 40px;
     background-image: url('../assets/images/infologo.jpg');
@@ -469,7 +498,7 @@ span {
 }
 
 #p-education {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--color-border);
     padding-top: 20px;
     margin-top: 30px;
 
@@ -508,7 +537,7 @@ span {
 
 #p-contact {
     margin: auto;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--color-border);
     padding-top: 20px;
     margin-top: 30px;
     text-align: center;
@@ -524,7 +553,7 @@ span {
 }
 
 @media only screen and (max-device-width : 1250px) {
-    
+
     #div-menu {
 
         grid-template-columns: 20% 60% 20%;
