@@ -19,6 +19,9 @@
     },
     "projects": {
         "title": "PROYECTOS",
+        "ApyShelf": {
+            "description": "Una aplicación web con una REST API desarrollada con Django REST Framework y React + Vite"
+        },
         "FixGarage": {
             "description": "Una aplicación web minimalista que realiza operaciones CRUD básicas en un modelo de datos de ejemplo."
         },
