@@ -440,6 +440,12 @@ span {
     background-image: url('../assets/images/technologies/javascript-icon.png');
 }
 
+#react {
+    border-radius: 8px;
+    background-size: cover;
+    background-image: url('../assets/images/technologies/react-icon.png');
+}
+
 #django {
     border-radius: 8px;
     background-size: cover;
