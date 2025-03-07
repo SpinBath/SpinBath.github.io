@@ -19,6 +19,9 @@
     },
     "projects": {
         "title": "PROJECTS",
+        "AtomCrawler": {
+            "description": "A web scraper that collects, structures, and processes data on nuclear power plants worldwide."
+        },
         "ApyShelf": {
             "description": "Web application with a REST API using Django REST Framework and React + Vite."
         },
