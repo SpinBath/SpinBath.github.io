@@ -5,6 +5,7 @@
 }
 
 * {
+    cursor: var(--cursor);
     margin: 0;
     font-family: 'Funnel Sans', sans-serif;
     color: var(--color-fuente);
@@ -17,14 +18,38 @@ select {
 }
 
 :root {
+
+    --imagen-linkedin: url('../assets/images/linkedin.png');
+    --imagen-github: url('../assets/images/github.png');
+    --imagen-gmail: url('../assets/images/gmail.png');
+    --imagen-url: url('../assets/images/externo.png');
+
+
+    --cursor: url('../assets/images/cursor/cursor.png'), default !important;
+    --cursor-button: url('../assets/images/cursor/mano.png'), pointer !important;
+    --cursor-button-reverse: url('../assets/images/cursor/light-cursor.png'), pointer !important;
+
+
     --color-fuente: black;
     --color-border: black;
     --color-fuente-button: black;
     --color-fondo: white;
-    transition: color 1s ease, background-color 1s ease, border-color 1s ease;
+
+
 }
 
 .dark-theme {
+
+    --imagen-linkedin: url('../assets/images/linkedin-light.png');
+    --imagen-github: url('../assets/images/github-light.png');
+    --imagen-gmail: url('../assets/images/gmail-light.png');
+    --imagen-url: url('../assets/images/externo-light.png');
+
+    --cursor: url('../assets/images/cursor/light-cursor.png'), default !important;
+    --cursor-button: url('../assets/images/cursor/light-mano.png'), pointer !important;
+    --cursor-button-reverse: url('../assets/images/cursor/mano.png'), pointer !important;
+
+
     --color-fuente: white;
     --color-border: white;
     --color-fuente-button: white;
@@ -39,11 +64,18 @@ select {
 
 
 .theme-btn,
+.theme-btn2,
+.light-box,
+.dark-box,
+.text {
+    cursor: var(--cursor-button);
+}
+
+.theme-btn,
 .theme-btn2 {
     display: flex;
     align-items: center;
     gap: 3px;
-    cursor: pointer;
 }
 
 .light-box {
@@ -138,6 +170,7 @@ select {
 }
 
 button {
+    cursor: var(--cursor-button);
     background-color: var(--color-fondo);
     font-size: 18px;
     width: 200px;
@@ -367,7 +400,9 @@ button:hover::after {
 
 
 #contact-url {
-    margin-bottom: 150px;
+    position: relative;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 #contact-url .child {
@@ -381,19 +416,47 @@ button:hover::after {
 }
 
 #contact-url .child .contact-info {
+    cursor: text;
     font-size: 19px;
     padding-bottom: 30px;
 }
 
 
 #contact-url .child img {
+    content: var(--imagen-url);
+    cursor: var(--cursor-button);
     margin-right: 10px;
-    width: 14px;
-    border: 3px solid white;
-    border-radius: 4px;
-    background-color: white;
+    width: 16px;
     transform: translateY(20%);
+    transition: ease 0.3s;
 }
+
+#contact-url .child img:hover {
+    scale: 140%;
+}
+
+#contact-url::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid var(--color-border);
+    border-right: 2px solid var(--color-border);
+}
+
+#contact-url::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid var(--color-border);
+    border-left: 2px solid var(--color-border);
+}
+
 
 
 #contact {
@@ -412,14 +475,25 @@ button:hover::after {
 
 
 #contact img {
+    cursor: var(--cursor-button-reverse);
     margin-right: 100px;
-    border-radius: 15px;
-    background-color: white;
     display: block;
     width: 35px;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 10px;
     transition: ease 0.2s;
+}
+
+#contact #github {
+    content: var(--imagen-github)
+}
+
+#contact #linkedin {
+    content: var(--imagen-linkedin)
+}
+
+#contact #gmail {
+    content: var(--imagen-gmail)
 }
 
 #contact img:hover {
@@ -472,7 +546,6 @@ button:hover::after {
     border: none;
     background: #007bff;
     color: white;
-    cursor: pointer;
     border-radius: 5px;
 }
 
@@ -483,7 +556,6 @@ button:hover::after {
 .fade-out {
     opacity: 0;
 }
-
 
 ::-webkit-scrollbar {
     width: 0px;
