@@ -114,7 +114,7 @@ select {
     padding-left: 10px;
     margin-bottom: 60px;
     border-bottom: 1px solid var(--color-border);
-    width: 800px;
+    width: 100%;
     display: inline-flex;
     gap: 15px;
 }
@@ -562,15 +562,84 @@ button:hover::after {
     height: 0px;
 }
 
-@media only screen and (max-device-width : 1250px) {
-
-    #main-div{
-        width: 90%;
+@media screen and (max-width: 768px) {
+    
+    #container {
+        width: 90%; 
         margin: auto;
     }
 
-    #contact{
+    #main-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact {
         display: none;
     }
 
+
+    #contact a img {
+        width: 30px;
+    }
+
+    .theme-btn {
+        width: 100px;
+        padding: 5px;
+    }
+
+    #about-me, #experience, #projects, #education, #contact-url {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .child {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .title-section {
+        font-size: 1.5em;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    #cv button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button, a {
+        touch-action: manipulation;
+    }
+}
+
+@media (max-width: 321px) {
+
+    #main-div{
+        margin-left: 0px auto;
+    }
+    body {
+        font-size: 12px;
+    }
+
+    #container {
+        padding: 5px;
+    }
+
+    .child {
+        padding: 8px;
+    }
+
+    #info {
+        font-size: 12px;
+    }
+
+    #cv a button {
+        font-size: 12px;
+        padding: 8px;
+    }
 }
