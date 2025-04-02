@@ -1,227 +1,196 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/images/Favicon.png" />
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/images/Favicon.png" />
     <link rel="stylesheet" href="css/styles.css">
-    <title>X-Ray Binary | PORTFOLIO</title>
+
+    <title>David Sánchez | PORTFOLIO</title>
+
+
 </head>
 
 <body>
 
-    <div id="div-menu">
-        <div id="div-language-opt">
-            <select id="select-lang">
-                <option value="es">ES</option>
-                <option value="en">EN</option>
-            </select>
-        </div>
-        <nav id="div-navegator">
-            <ul id="div-navegator-ul">
-                <li id="div-navegator-li"><a id="a-about" href="#div-about" onclick="menuButton()"
-                        data-i18n="nav.about">About</a></li>
-                <li id="div-navegator-li"><a id="a-experience" href="#div-experience" onclick="menuButton()"
-                        data-i18n="nav.experience">Experience</a></li>
-                <li id="div-navegator-li"><a id="a-project" href="#div-project" onclick="menuButton()"
-                        data-i18n="nav.projects">Projects</a></li>
-                <li id="div-navegator-li"><a id="a-education" href="#div-education" onclick="menuButton()"
-                        data-i18n="nav.education">Education</a></li>
-                <li id="div-navegator-li"><a id="a-contact" href="#div-contact" onclick="menuButton()"
-                        data-i18n="nav.contact">Contact</a></li>
-            </ul>
-            <div id="div-showmenu">
-                <button id="button-showmenu" type="button" onclick="cambiaTema(ev)" value="hide">menu</button>
-            </div>
-        </nav>
-        <div id="div-style-opt">
-            <button id="button-style-opt" value="dark" onclick="cambiaTema()">🌙</button>
-
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>DAVID SÁNCHEZ | PORTFOLIO</h2>
+            <div id="load-bar" class="load-bar"></div>
         </div>
     </div>
-
-
-
-
 
     <div id="container">
 
+        <div id="contact">
+            <a href="https://github.com/XRayBinary"><img src="assets/images/github.png" /></a>
+            <a href="https://www.linkedin.com/in/d-vid/"><img src="assets/images/linkedin.png" /></a>
+            <a href="mailto:david.sanchezalb@gmail.com"><img src="assets/images/gmail.png" /></a>
+        </div>
 
 
-        <div class="seccion" id="div-about">
+        <div id="main-div">
+            <div id="options">
+                <div class="theme-btn" onclick="changeTheme('light')">
+                    <div class="light-box"></div>
+                    <div class="text">LIGHT</div>
+                </div>
+                <div class="theme-btn" onclick="changeTheme('dark')">
+                    <div class="dark-box"></div>
+                    <div class="text">DARK</div>
+                </div>
+                <div id="div-language-opt">
+                    <select id="select-lang">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+            </div>
 
-            <div id="about-content">
-                <p id="p-name" data-i18n="about.name">Hi, I'm <span>David Sánchez</span> a</p>
-                <p id="p-job" data-i18n="about.job">FullStack<br>Developer</p>
-                <p id="p-info" data-i18n="about.info">Graduated in Cybersecurity in Information Technology Environments
-                    (CETI), passionate about software development and the field of cybersecurity.</p>
-                <p id="p-button">
+            <div id="about-me">
+
+                <p id="name">DAVID SÁNCHEZ</p>
+                <p id="job">PYTHON DEVELOPER</p>
+
+                <p id="info" data-i18n="about.info">
+                    Graduado en Ciberseguridad en Entornos de la Tecnología de la Información con el interés de poder
+                    desarrollar mi carrera carrera profesional en el desarrollo de software y la ciberseguridad.
+                    <br><br>
+                    Busco mi primera experiencia laboral como desarrollador, actualmente las tecnologías en las que
+                    tengo
+                    mayor nivel son Python, Django, React y MySQL aunque estoy abierto a formarme en otros stacks
+                    tecnológicos.
+                </p>
+                <p id="cv">
                     <a href="assets/docs/CV - David Sánchez Albarrán.pdf" target="_blank" download>
-                        <button data-i18n="about.button">Download CV</button>
+                        <button data-i18n="about.cv">Descargar CV</button></a>
+                </p>
+            </div>
+            <div id="experience">
+                <p class="title-section">EXPERIENCE</p>
+                <div class="child">
+                    <p class="experience-name" data-i18n="experience.name-1">Junior Developer (FCT)</p>
+                    <p class="experience-company">NTT DATA Salamanca</p>
+                    <p class="experience-date">[ Mar 2023 - May 2023 ]</p>
+                    <p class="experience-info" data-i18n="experience.info-1">
+                        Carbajosa de la Sagrada, Salamanca | Spain
+                        <br><br>
+                        - Development of utilities for the service.<br>
+                        - Database maintenance and management.
+                        <br><br>
+                        Main technologies of the service:
+                        <br>
+                        Oracle SQL Developer - Visual Basic - Vue.js - Python
+                    </p>
+                </div>
+                <div class="child">
+                    <p class="experience-name" data-i18n="experience.name-2">Maintenance Technician (FCT)</p>
+                    <p class="experience-company" data-i18n="experience.company-2">Peñaranda de Bracamonte Town Hall</p>
+                    <p class="experience-date">[ Apr 2019 - Jun 2021 ]</p>
+                    <p class="experience-info" data-i18n="experience.info-2">
+                        Peñaranda de Bracamonte, Salamanca | Spain
+                        <br><br>
+                        - Maintenance and repair of computer equipment<br>
+                        - Network maintenance
+                    </p>
+                </div>
+            </div>
+            <div id="projects">
+                <p class="title-section">PROJECTS</p>
+                <div class="child">
+                    <a href="https://github.com/XRayBinary/AtomCrawler">
+                        <p class="project-name">ATOMCRAWLER</p>
                     </a>
-                </p>
-            </div>
-
-        </div>
-
-
-
-        <div class="seccion" id="div-experience">
-
-            <h1 data-i18n="experience.title">EXPERIENCE</h1>
-
-            <div id="experience-content">
-                <p id="p-experience" data-i18n="experience.job1">
-
-                </p>
-                <p id="p-experience" data-i18n="experience.job2">
-
-                </p>
-            </div>
-
-        </div>
-
-
-
-        <div class="seccion" id="div-project">
-
-            <h1 data-i18n="projects.title">PROJECTS</h1>
-            <div id="project-content">
-                <div id="project">
-                    <img src="assets/images/AtomCrawler.png">
-                    <div id="info-project">
-                        <p id="p-AtomCrawler">AtomCrawler</p>
-                        <a href="https://github.com/XRayBinary/AtomCrawler"><button id="info"></button></a>
-
-                    </div>
-                    <p id="p-AtomCrawler-info" data-i18n="projects.AtomCrawler.description">A web scraper that collects,
-                        structures, and processes data on nuclear power plants worldwide.</p>
+                    <p class="project-info" data-i18n="project.info-1">A web scraper that collects, structures, and
+                        processes data on nuclear power
+                        plants
+                        worldwide.</p>
+                    <p class="project-tech">Python | Pandas | Matplotlib | Beautifulsoup</p>
                 </div>
-
-                <div id="project">
-                    <img src="assets/images/APYSHELF WEB.png">
-                    <div id="info-project">
-                        <p id="p-APYSHELF">APYSHELF WEB</p>
-                        <a href="https://github.com/XRayBinary/APYSHELF-WEB"><button id="info"></button></a>
-
-                    </div>
-                    <p id="p-ApyShelf-info" data-i18n="projects.ApyShelf.description">Web application with a REST API
-                        using Django REST Framework and React + Vite.</p>
+                <div class="child">
+                    <p class="project-name">APYSHELF</p>
+                    <p class="project-info" data-i18n="project.info-2">Web application with a REST API using Django REST
+                        Framework and React +
+                        Vite.
+                    </p>
+                    <p class="project-tech">Python | Django | React | Javascript | SQLite</p>
                 </div>
-
-                <div id="project">
-                    <img src="assets/images/FixGarage.png">
-                    <div id="info-project">
-                        <p id="p-FixGarage">Fix Garage</p>
-                        <a href="https://github.com/XRayBinary/FixGarage"><button id="info"></button></a>
-
-                    </div>
-                    <p id="p-FixGarage-info" data-i18n="projects.FixGarage.description">A minimalistic web app that
-                        performs basic CRUD operations on a sample data
-                        model.</p>
+                <div class="child">
+                    <p class="project-name">FIXGARAGE</p>
+                    <p class="project-info" data-i18n="project.info-3">A minimalistic web app that performs basic CRUD
+                        operations on a sample data
+                        model.
+                    </p>
+                    <p class="project-tech">Python | Django | Javascript | SQLite</p>
                 </div>
-
-                <div id="project">
-                    <img src="assets/images/GraveLock.png">
-                    <div id="info-project">
-                        <p id="p-GraveLock">Grave Lock</p>
-                        <a href="https://github.com/XRayBinary/Grave-Lock"><button id="info"></button></a>
-                    </div>
-                    <p id="p-GraveLock-info" data-i18n="projects.GraveLock.description">Cybersecurity tool designed for
-                        password encryption, decryption of hashes
-                        using dictionaries.</p>
-                </div>
-
-                <div id="project">
-                    <img src="assets/images/ModOrganizer.png">
-                    <div id="info-project">
-                        <p id="p-ModOrganizer">Mod Organizer FS22</p>
-                        <a href="https://github.com/XRayBinary/Mod-Organizer"><button id="info"></button></a>
-                    </div>
-                    <p id="p-ModOrganizer-info" data-i18n="projects.ModOrganizer.description">Tool designed to organize
-                        and categorize the different types of mods
-                        available for Farming Simulator 2022.</p>
-                </div>
-
-            </div>
-
-            <br>
-
-            <h2 data-i18n="technologies.title">TECHNOLOGIES</h2>
-            <div id="technology-content">
-                <div class="technology" id="html">
-
-                </div>
-                <div class="technology" id="css">
-
-                </div>
-                <div class="technology" id="javascript">
-
-                </div>
-                <div class="technology" id="react">
-
-                </div>
-                <div class="technology" id="django">
-
-                </div>
-                <div class="technology" id="python">
-
-                </div>
-                <div class="technology" id="java">
-
-                </div>
-                <div class="technology" id="mysql">
-
+                <div class="child">
+                    <p class="project-name">GRAVE-LOCK</p>
+                    <p class="project-info" data-i18n="project.info-4">Cybersecurity tool designed for password
+                        encryption, decryption of hashes
+                        using
+                        dictionaries.</p>
+                    <p class="project-tech">Python | Hashlib</p>
                 </div>
             </div>
 
+            <div id="education">
+                <p class="title-section">EDUCATION</p>
+                <div class="child">
+                    <p class="education-title" data-i18n="education.title-1">Specialization in Cybersecurity in
+                        Information Technology Environments
+                        (CETI)</p>
+                    <p class="education-date">[ 2023 - 2024 ]</p>
+                    <p class="education-center">IES Venancio Blanco | Salamanca</p>
 
-        </div>
+                </div>
+                <div class="child">
+                    <p class="education-title" data-i18n="education.title-2">Multiplatform Application Development (DAM)
+                    </p>
+                    <p class="education-date">[ 2021 - 2023 ]</p>
+                    <p class="education-center">IES Venancio Blanco | Salamanca</p>
 
-        <div class="seccion" id="div-education">
+                </div>
+                <div class="child">
+                    <p class="education-title" data-i18n="education.title-3">Microcomputer Systems and Networks (SMR)
+                    </p>
+                    <p class="education-date">[ 2019 - 2021 ]</p>
+                    <p class="education-center">IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte</p>
 
-
-            <div id="education-content">
-                <h1 data-i18n="education.title">EDUCATION</h1>
-
-                <p id="p-education" data-i18n="education.grade1">
-                    2023 - 2024<br>
-                    IES Venancio Blanco | Salamanca<br>
-                    <span>Especialización en Ciberseguridad en Entornos de las Tecnologías de la Información</span><br>
-                </p>
-                <p id="p-education" data-i18n="education.grade2">
-                    2021 - 2023<br>
-                    IES Venancio Blanco | Salamanca<br>
-                    <span>Desarrollo Aplicaciones Multiplataforma (DAM)</span><br>
-                </p>
-                <p id="p-education" data-i18n="education.grade3">
-                    2019 - 2021<br>
-                    IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte<br>
-                    <span>Sistemas Microinformáticos y Redes (SMR)</span><br>
-                </p>
-
-
-            </div>
-
-        </div>
-
-        <div class="seccion" id="div-contact">
-
-            <div id="contact-content">
-                <h1 data-i18n="contact.title">CONTACT</h1>
-                <div id="contact-content">
-                    <div id="p-contact">
-                        <h2>Gmail</h2> david.sanchezalb@gmail.com<br><br>
-                        <h2>Linkedin</h2> linkedin.com/in/d-vid<a
-                            href="https://www.linkedin.com/in/d-vid/">🔗</a><br><br>
-                        <h2>Github</h2> github.com/XRayBinary<a href="https://www.linkedin.com/in/d-vid/">🔗</a><br><br>
-                    </div>
                 </div>
             </div>
+            <div id="contact-url">
+                <p class="title-section">CONTACT</p>
+                <div class="child">
+                    <p class="contact-title">GMAIL</p>
+                    <p class="contact-info"><a href="mailto:david.sanchezalb@gmail.com"><img
+                                src="assets/images/externo.png" /></a>david.sanchezalb@gmail.com</p>
+                    <p class="contact-title">LINKEDIN</p>
+                    <p class="contact-info"><a href="https://www.linkedin.com/in/d-vid/"><img
+                                src="assets/images/externo.png" /></a>linkedin.com/in/d-vid</p>
+                    <p class="contact-title">GITHUB</p>
+                    <p class="contact-info"><a href="https://github.com/XRayBinary"><img
+                                src="assets/images/externo.png" /></a>github.com/XRayBinary</p>
+                </div>
+            </div>
+
         </div>
     </div>
+
+
+
 
     <script src="js/main.js">
 
