@@ -561,3 +561,16 @@ button:hover::after {
     width: 0px;
     height: 0px;
 }
+
+@media only screen and (max-device-width : 1250px) {
+
+    #main-div{
+        width: 90%;
+        margin: auto;
+    }
+
+    #contact{
+        display: none;
+    }
+
+}
