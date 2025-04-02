@@ -1,17 +1,22 @@
-* {
-    margin: 0;
-    font-family: var(--fuente);
-    color: var(--color-fuente);
-    background-color: var(--color-fondo);
+@font-face {
+    font-family: 'Funnel Sans';
+    src: local('Funnel Sans'),
+        url('../assets/fonts/FunnelSans-VariableFont_wght.ttf') format("truetype");
 }
 
-select{
+* {
+    margin: 0;
+    font-family: 'Funnel Sans', sans-serif;
+    color: var(--color-fuente);
+    background-color: var(--color-fondo)
+}
+
+select {
     border: none;
     padding: 2px;
 }
 
 :root {
-    --fuente: "Funnel Sans", sans-serif;
     --color-fuente: black;
     --color-border: black;
     --color-fuente-button: black;
@@ -20,7 +25,6 @@ select{
 }
 
 .dark-theme {
-    --fuente: "Funnel Sans", sans-serif;
     --color-fuente: white;
     --color-border: white;
     --color-fuente-button: white;
