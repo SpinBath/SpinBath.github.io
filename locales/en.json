@@ -1,50 +1,24 @@
 {
-    "nav": {
-        "about": "About",
-        "experience": "Experience",
-        "projects": "Projects",
-        "education": "Education",
-        "contact": "Contact"
-    },
     "about": {
-        "name": "Hello, I am <span>David Sánchez</span>",
-        "job": "Developer<br>FullStack",
-        "info": "Graduated in Cybersecurity in Information Technology Environments (CETI), passionate about software development and the field of cybersecurity.",
-        "button": "Download CV"
+        "info": "Graduated in Cybersecurity in Information Technology Environments with an interest in developing my professional career in software development and cybersecurity.<br><br>I am looking for my first job experience as a developer, currently the technologies I have the most experience in are Python, Django, React, and MySQL, although I am open to training in other technological stacks.",
+        "cv": "Download CV"
     },
     "experience": {
-        "title": "EXPERIENCE",
-        "job1": "Mar 2023 - May 2023 <br> Carbajosa de la Sagrada, Salamanca | Spain<br><br> <span>Junior Developer (FCT)</span> <br> NTT DATA Salamanca <br><br> <li>Development of utilities for the service.</li> <li>Database maintenance and management.</li><br> Main technologies of the service: <br><br> Oracle SQL Developer - Visual Basic - Vue.js - Python<br>",
-        "job2": "Apr 2019 - Jun 2021 <br>Peñaranda de Bracamonte, Salamanca | Spain <br><br><span>Maintenance Technician (FCT)</span> <br>Peñaranda de Bracamonte Town Hall <br><br><li>Maintenance and repair of computer equipment</li><li>Network maintenance</li><br>"
+        "name-1": "Junior Developer (FCT)",
+        "info-1": "Carbajosa de la Sagrada, Salamanca | Spain<br><br>- Development of utilities for the service.<br>- Database maintenance and management.<br><br>Main technologies of the service:<br>Oracle SQL Developer - Visual Basic - Vue.js - Python",
+        "name-2": "Maintenance Technician (FCT)",
+        "company-2": "Peñaranda de Bracamonte Town Hall",
+        "info-2": "Peñaranda de Bracamonte, Salamanca | Spain<br><br>- Maintenance and repair of computer equipment<br>- Network maintenance"
     },
-    "projects": {
-        "title": "PROJECTS",
-        "AtomCrawler": {
-            "description": "A web scraper that collects, structures, and processes data on nuclear power plants worldwide."
-        },
-        "ApyShelf": {
-            "description": "Web application with a REST API using Django REST Framework and React + Vite."
-        },
-        "FixGarage": {
-            "description": "A minimalist web application that performs basic CRUD operations on a sample data model."
-        },
-        "GraveLock": {
-            "description": "A cybersecurity tool designed for password encryption and hash decryption using dictionaries."
-        },
-        "ModOrganizer": {
-            "description": "A tool designed to organize and categorize the different types of mods available for Farming Simulator 2022."
-        }
-    },
-    "technologies": {
-        "title": "TECHNOLOGIES"
+    "project": {
+        "info-1": "A web scraper that collects, structures, and processes data on nuclear power plants worldwide.",
+        "info-2": "Web application with a REST API using Django REST Framework and React + Vite.",
+        "info-3": "A minimalistic web app that performs basic CRUD operations on a sample data model.",
+        "info-4": "Cybersecurity tool designed for password encryption, decryption of hashes using dictionaries."
     },
     "education": {
-        "title": "EDUCATION",
-        "grade1": "2023 - 2024<br> IES Venancio Blanco | Salamanca<br> <span>Specialization in Cybersecurity in Information Technology Environments (CETI)</span><br>",
-        "grade2": "2021 - 2023<br> IES Venancio Blanco | Salamanca<br> <span>Multiplatform Application Development (DAM)</span><br>",
-        "grade3": "2019 - 2021<br> IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte<br> <span>Microcomputer Systems and Networks (SMR)</span><br>"
-    },
-    "contact": {
-        "title": "CONTACT"
+        "title-1": "Specialization in Cybersecurity in Information Technology Environments (CETI)",
+        "title-2": "Multiplatform Application Development (DAM)",
+        "title-3": "Microcomputer Systems and Networks (SMR)"
     }
 }

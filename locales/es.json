@@ -1,50 +1,24 @@
 {
-    "nav": {
-        "about": "Sobre mi",
-        "experience": "Experiencia",
-        "projects": "Proyectos",
-        "education": "Estudios",
-        "contact": "Contacto"
-    },
     "about": {
-        "name": "Hola, soy <span>David Sánchez</span>",
-        "job": "Developer<br>FullStack",
-        "info": "Graduado en Ciberseguridad en Entornos de las Tecnologías de la Información (CETI), apasionado por el desarrollo de software y el campo de la ciberseguridad.",
-        "button": "Descargar CV"
+        "info": "Graduado en Ciberseguridad en Entornos de la Tecnología de la Información con el interés de poder desarrollar mi carrera profesional en el desarrollo de software y la ciberseguridad.<br><br>Busco mi primera experiencia laboral como desarrollador, actualmente las tecnologías en las que tengo mayor nivel son Python, Django, React y MySQL, aunque estoy abierto a formarme en otros stacks tecnológicos.",
+        "cv": "Descargar CV"
     },
     "experience": {
-        "title": "EXPERIENCIA",
-        "job1": "Mar 2023 - May 2023 <br> Carbajosa de la Sagrada, Salamanca | España<br><br> <span>Developer Junior (FCT)</span> <br> NTT DATA Salamanca <br><br> <li>Desarrollo de utilidades para el servicio.</li> <li>Mantenimiento y gestión de bases de datos.</li><br> Principales tecnologías del servicio: <br><br> Oracle SQL Developer - Visual Basic - Vue.js - Python<br>",
-        "job2": "Abr 2019 - Jun 2021 <br>Peñaranda de Bracamonte, Salamanca | España <br><br><span>Técnico de mantenimiento (FCT)</span> <br>Ayuntamiento de Peñaranda de Bracamonte <br><br><li>Mantenimiento y reparación de equipos informáticos</li><li>Mantenimiento de la red</li><br>"
+        "name-1": "Desarrollador Junior (FCT)",
+        "info-1": "Carbajosa de la Sagrada, Salamanca | España<br><br>- Desarrollo de utilidades para el servicio.<br>- Mantenimiento y gestión de bases de datos.<br><br>Principales tecnologías del servicio:<br>Oracle SQL Developer - Visual Basic - Vue.js - Python",
+        "name-2": "Técnico de Mantenimiento (FCT)",
+        "company-2": "Ayuntamiento de Peñaranda de Bracamonte",
+        "info-2": "Peñaranda de Bracamonte, Salamanca | España<br><br>- Mantenimiento y reparación de equipos informáticos<br>- Mantenimiento de redes"
     },
-    "projects": {
-        "title": "PROYECTOS",
-        "AtomCrawler": {
-            "description": "Un web scraper que recoge, estructura y procesa datos sobre plantas de energía nuclear en todo el mundo."
-        },
-        "ApyShelf": {
-            "description": "Una aplicación web con una REST API desarrollada con Django REST Framework y React + Vite"
-        },
-        "FixGarage": {
-            "description": "Una aplicación web minimalista que realiza operaciones CRUD básicas en un modelo de datos de ejemplo."
-        },
-        "GraveLock": {
-            "description": "Herramienta de ciberseguridad diseñada para la encriptación de contraseñas y descifrado de hashes usando diccionarios."
-        },
-        "ModOrganizer": {
-            "description": "Herramienta diseñada para organizar y categorizar los diferentes tipos de mods disponibles para Farming Simulator 2022."
-        }
-    },
-    "technologies": {
-        "title": "TECNOLOGIAS"
+    "project": {
+        "info-1": "Un web scraper que recoge, estructura y procesa datos sobre plantas nucleares en todo el mundo.",
+        "info-2": "Aplicación web con una API REST utilizando Django REST Framework y React + Vite.",
+        "info-3": "Una aplicación web minimalista que realiza operaciones CRUD básicas sobre un modelo de datos de ejemplo.",
+        "info-4": "Herramienta de ciberseguridad diseñada para el cifrado de contraseñas, descifrado de hashes usando diccionarios."
     },
     "education": {
-        "title": "ESTUDIOS",
-        "grade1": "2023 - 2024<br> IES Venancio Blanco | Salamanca<br> <span>Especialización en Ciberseguridad en Entornos de las Tecnologías de la Información (CETI)</span><br>",
-        "grade2": "2021 - 2023<br> IES Venancio Blanco | Salamanca<br> <span>Desarrollo de Aplicaciones Multiplataforma (DAM)</span><br>",
-        "grade3": "2019 - 2021<br> IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte<br> <span>Sistemas Microinformáticos y Redes (SMR)</span><br>"
-    },
-    "contact": {
-        "title": "CONTACTO"
+        "title-1": "Especialización en Ciberseguridad en Entornos de la Tecnología de la Información (CETI)",
+        "title-2": "Desarrollo de Aplicaciones Multiplataforma (DAM)",
+        "title-3": "Sistemas Microinformáticos y Redes (SMR)"
     }
 }
