@@ -118,7 +118,7 @@ select {
     gap: 15px;
 }
 
-.light-box{
+.light-box {
     margin-left: 10px;
 }
 
@@ -406,7 +406,7 @@ button:hover::after {
     margin-bottom: 100px;
 }
 
-#contact-url a{
+#contact-url a {
     text-decoration: none;
     cursor: var(--cursor-button);
 }
