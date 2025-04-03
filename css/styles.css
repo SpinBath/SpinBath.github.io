@@ -406,6 +406,11 @@ button:hover::after {
     margin-bottom: 100px;
 }
 
+#contact-url a{
+    text-decoration: none;
+    cursor: var(--cursor-button);
+}
+
 #contact-url .child {
     text-align: center;
     padding-top: 100px;
