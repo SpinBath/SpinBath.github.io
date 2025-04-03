@@ -458,8 +458,6 @@ button:hover::after {
     border-left: 2px solid var(--color-border);
 }
 
-
-
 #contact {
 
     width: 100px;
@@ -500,13 +498,6 @@ button:hover::after {
 #contact img:hover {
     scale: 125%;
 }
-
-
-
-
-
-
-
 
 .popup {
     position: fixed;
@@ -629,6 +620,10 @@ button:hover::after {
 
     .title-section {
         font-size: 20px !important;
+    }
+
+    .experience-name {
+        font-size: 26px !important;
     }
 
     .project-name {
