@@ -129,6 +129,7 @@ select {
 }
 
 #about-me #name {
+    font-weight: bold;
     font-size: 60px;
 }
 
@@ -531,6 +532,8 @@ button:hover::after {
     width: 400px;
 }
 
+
+
 .popup-content {
     text-align: center;
     width: 800px;
@@ -538,19 +541,6 @@ button:hover::after {
     padding: 20px;
     border-radius: 10px;
     margin: auto;
-}
-
-.popup button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: none;
-    background: #007bff;
-    color: white;
-    border-radius: 5px;
-}
-
-.popup button:hover {
-    background: #0056b3;
 }
 
 .fade-out {
@@ -562,14 +552,17 @@ button:hover::after {
     height: 0px;
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 1200px) {
+
+
     #container {
-        width: 90%; 
+        width: 90%;
         margin: auto;
     }
 
     #main-div {
+        margin: auto;
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -579,67 +572,83 @@ button:hover::after {
         display: none;
     }
 
-
-    #contact a img {
-        width: 30px;
-    }
-
-    .theme-btn {
-        width: 100px;
-        padding: 5px;
-    }
-
-    #about-me, #experience, #projects, #education, #contact-url {
+    #about-me,
+    #experience,
+    #projects,
+    #education,
+    #contact-url {
         width: 100%;
         padding: 10px;
     }
 
-    .child {
-        padding: 15px;
-        margin-bottom: 15px;
+
+
+    button,
+    a {
+        touch-action: manipulation;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #main-div {
+        margin-top: 30px;
+    }
+
+    #about-me,
+    #experience,
+    #projects,
+    #education,
+    #contact-url {
+        margin-bottom: 10px;
+    }
+
+    #contact-url .child {
+        padding-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    #contact-url {
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 90% !important;
+    }
+
+    #name {
+        font-size: 30px !important;
+    }
+
+    #job {
+        font-size: 20px !important;
+
     }
 
     .title-section {
-        font-size: 1.5em;
+        font-size: 20px !important;
     }
 
-    body {
-        font-size: 14px;
+    .project-name {
+        padding: 10px 0px;
+        font-size: 36px !important;
     }
 
-    #cv button {
-        width: 100%;
-        padding: 10px;
+    .popup-content {
+        font-size: 90%;
+        width: 400px;
     }
 
-    button, a {
+    .loading {
+        width: 310px;
+    }
+
+    button,
+    a {
         touch-action: manipulation;
     }
-}
 
-@media (max-width: 321px) {
 
-    #main-div{
-        margin-left: 0px auto;
-    }
-    body {
-        font-size: 12px;
-    }
-
-    #container {
-        padding: 5px;
-    }
-
-    .child {
-        padding: 8px;
-    }
-
-    #info {
-        font-size: 12px;
-    }
-
-    #cv a button {
-        font-size: 12px;
-        padding: 8px;
-    }
 }
