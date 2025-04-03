@@ -111,7 +111,6 @@ select {
 
 
 #options {
-    padding-left: 10px;
     margin-bottom: 60px;
     border-bottom: 1px solid var(--color-border);
     width: 100%;
@@ -119,7 +118,9 @@ select {
     gap: 15px;
 }
 
-
+.light-box{
+    margin-left: 10px;
+}
 
 #main-div {
     margin: auto;
