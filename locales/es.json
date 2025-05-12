@@ -11,9 +11,9 @@
         "info-2": "Peñaranda de Bracamonte, Salamanca | España<br><br>- Mantenimiento y reparación de equipos informáticos<br>- Mantenimiento de redes"
     },
     "project": {
-        "info-1": "Un web scraper que recoge, estructura y procesa datos sobre plantas nucleares en todo el mundo.",
+        "info-1": "Un sistema ETL que realiza web scraping para recoger, estructurar y procesar datos sobre plantas nucleares en todo el mundo.",
         "info-2": "Aplicación web con una API REST utilizando Django REST Framework y React + Vite.",
-        "info-3": "Una aplicación web minimalista que realiza operaciones CRUD básicas sobre un modelo de datos de ejemplo.",
+        "info-3": "Aplicación web que realiza operaciones CRUD utilizando Django.",
         "info-4": "Herramienta de ciberseguridad diseñada para el cifrado de contraseñas, descifrado de hashes usando diccionarios."
     },
     "education": {
