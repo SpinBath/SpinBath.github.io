@@ -325,6 +325,12 @@ button:hover::after {
     color: var(--color-fuente);
 }
 
+#projects .child p:hover {
+    cursor: var(--cursor-button);
+}
+
+
+
 #projects .child .project-info {
     font-size: 18px;
     font-weight: 200;
