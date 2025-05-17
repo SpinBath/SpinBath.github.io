@@ -192,7 +192,6 @@ button::before {
     border-top: 2px solid var(--color-border);
     border-left: 2px solid var(--color-border);
     transition: ease 0.6s;
-
 }
 
 button::after {
@@ -562,13 +561,13 @@ button:hover::after {
         margin: auto;
     }
 
-    #main-div {
-        margin: auto;
-        margin-top: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        #main-div {
+            margin: auto;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
     #contact {
         display: none;

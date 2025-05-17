@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../css/projects-pages.css">
+
+    <title>David Sánchez | PORTFOLIO</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="main-div">
+            <div id="options">
+                <div class="theme-btn" onclick="changeTheme('light')">
+                    <div class="light-box"></div>
+                    <div class="text">LIGHT</div>
+                </div>
+                <div class="theme-btn" onclick="changeTheme('dark')">
+                    <div class="dark-box"></div>
+                    <div class="text">DARK</div>
+                </div>
+                <div id="div-language-opt">
+                    <select id="select-lang">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="header">
+                <p id="title">GRAVE-LOCK</p><a href="/index.html">
+                    <p>Portfolio</p><img id="goback" />
+                </a>
+            </div>
+
+            <div id="gallery-container">
+                <div id="gallery">
+
+                    <button id="close-gallery" class="close-button">×</button>
+
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+
+                    <div class="wrapper-holder">
+                        <div id="slider-image"><img
+                                src="../assets/images/images-projects/GraveLock/GraveLock-logo.png" alt="Image 1"
+                                id="imagenZoom"></div>
+                        <div id="slider-image"><img
+                                src="../assets/images/images-projects/AtomCrawler/ATOMCRAWLER-image2.png" alt="Image 1">
+                        </div>
+                        <div id="slider-image"><img src="../assets/images/images-projects/AtomCrawler/data-image.png"
+                                alt="Image 1"></div>
+                        <div id="slider-image"><img src="../assets/images/images-projects/AtomCrawler/data-image.png"
+                                alt="Image 1"></div>
+                    </div>
+
+                    <div class="nav">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="info">
+
+                <div id="resumen">
+                    <h2>INFORMATION</h2>
+                    AtomCrawler is an application that collects data from different nuclear reactors worldwide,
+                    generates new data based on the information already gathered, and conducts analyses to present the
+                    processed information through graphs and files.
+                </div>
+                <div id="stack">
+                    <p id="title">
+                        TECHNOLOGIES
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Hashlib</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="urls">
+                <a href="https://github.com/SpinBath/Grave-Lock"><button>View on GitHub</button></a>
+            </div>
+            <div id="contact">
+                <a href="https://github.com/SpinBath"><img id="github" /></a>
+                <a href="https://www.linkedin.com/in/d-vid/"><img id="linkedin" /></a>
+                <a href="mailto:david.sanchezalb@gmail.com"><img id="gmail" /></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/projects.js">
+
+    </script>
+
+</body>
+
+</html>
