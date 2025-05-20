@@ -312,11 +312,14 @@ button:hover::after {
 #projects .child .project-name {
     font-size: 55px;
     font-weight: 100;
-    transition: padding-left 0.5s ease-out;
+    transition: 0.5s ease-out;
 }
 
 #projects .child .project-name:hover {
     padding-left: 17%;
+    font-weight: bold;
+    transition: 0.5s ease-out;
+
 }
 
 #projects .child a {
