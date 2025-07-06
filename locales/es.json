@@ -14,7 +14,8 @@
         "info-1": "Un sistema ETL que realiza web scraping para recoger, estructurar y procesar datos sobre plantas nucleares en todo el mundo.",
         "info-2": "Aplicación web con una API REST utilizando Django REST Framework y React + Vite.",
         "info-3": "Aplicación web que realiza operaciones CRUD utilizando Django.",
-        "info-4": "Herramienta de ciberseguridad diseñada para el cifrado de contraseñas y descifrado de hashes usando diccionarios."
+        "info-4": "Herramienta de ciberseguridad diseñada para el cifrado de contraseñas y descifrado de hashes usando diccionarios.",
+        "info-5": "Herramienta en Python que utiliza PySpark para analizar archivos de registro de un servidor web."
     },
     "education": {
         "title-1": "Especialización en Ciberseguridad en Entornos de la Tecnología de la Información (CETI)",
