@@ -237,7 +237,7 @@ button:hover::after {
     margin-top: 40px;
     position: relative;
     padding-left: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     transition: ease 0.2s;
 
 
@@ -279,6 +279,11 @@ button:hover::after {
 
 #experience .child .experience-info {
     padding-left: 10px;
+}
+
+#experience .child .experience-info .experience-item-gap {
+    display: block;
+    height: 8px;
 }
 
 
@@ -421,7 +426,6 @@ button:hover::after {
 
 #contact-url .child {
     text-align: center;
-    padding-top: 100px;
 }
 
 #contact-url .child .contact-title {
@@ -435,6 +439,9 @@ button:hover::after {
     padding-bottom: 30px;
 }
 
+#contact-url .section-list {
+    padding: 100px 0 60px;
+}
 
 #contact-url .child img {
     content: var(--imagen-url);
@@ -612,6 +619,10 @@ button:hover::after {
     #contact-url .child {
         padding-top: 40px;
         margin-bottom: 30px;
+    }
+
+    #contact-url .section-list {
+        padding: 0;
     }
 
     #contact-url {

@@ -1,26 +1,117 @@
 {
+    "site": {
+        "title": "DAVID SÁNCHEZ | PORTFOLIO"
+    },
     "about": {
-        "info": "Graduated in Cybersecurity in Information Technology Environments with the interest of developing my professional career in software development and cybersecurity. <br><br> I have solid knowledge of Python and experience with technologies such as Django, Pandas, PySpark, React, among others. <br><br> I have participated in the development of web applications, REST APIs, ETL processes, web scraping tools, and cybersecurity-oriented solutions.",
+        "name": "DAVID SÁNCHEZ",
+        "role": "Java Developer & Oracle DBA Support",
+        "info": "Software developer and database support professional with experience in corporate Java applications in the renewable energy sector.<br><br>I work on the development and maintenance of AIRe (Iberdrola Renewables' Application for Stations), a platform for the comprehensive management of weather stations and measurement equipment, including data loading and the calculation of availability and quality indicators for Iberdrola's Renewables area.",
         "cv": "Download CV"
     },
-    "experience": {
-        "name-1": "Junior Developer (FCT)",
-        "info-1": "Carbajosa de la Sagrada, Salamanca | Spain<br><br>- Development of utilities for the service.<br>- Database maintenance and management.<br><br>Main technologies of the service:<br>Oracle SQL Developer - Visual Basic - Vue.js - Python",
-        "name-2": "Maintenance Technician (FCT)",
-        "company-2": "Peñaranda de Bracamonte Town Hall",
-        "info-2": "Peñaranda de Bracamonte, Salamanca | Spain<br><br>- Maintenance and repair of computer equipment<br>- Network maintenance"
+    "sections": {
+        "experience": "EXPERIENCE",
+        "projects": "PROJECTS",
+        "education": "EDUCATION",
+        "contact": "CONTACT"
     },
-    "project": {
-        "info-1": "An ETL system that performs web scraping to collect, structure, and process data about nuclear plants worldwide.",
-        "info-2": "Web application with a REST API using Django REST Framework and React + Vite.",
-        "info-3": "Django application web designed for workshop management that performs basic CRUD operations.",
-        "info-4": "Cybersecurity tool designed for password encryption, decryption of hashes using dictionaries.",
-        "info-5": "Python tool that uses PySpark to analyze log files from a web server."
-
+    "experience": {
+        "items": [
+            {
+                "name": "Java Developer & Oracle Database Support",
+                "company": "NTT DATA Europe & Latam",
+                "date": "[ Mar 2023 - May 2023 ]",
+                "info": "Carbajosa de la Sagrada, Salamanca | Spain<br><br>Development and maintenance of a corporate application for the integral management of meteorological stations in Iberdrola's Renewable area, participating in the full development cycle: backend, persistence, REST APIs, testing, automation, documentation, and deployment.<br><br>Responsibilities and key contributions:<br><br>- Development and evolution of backend functionality in Java, working on a corporate application for managing and processing meteorological information.<span class=experience-item-gap></span>- Design and implementation of REST APIs and Web Services for mobile app integration.<span class=experience-item-gap></span>- Design, maintenance, and evolution of the persistence layer on Oracle 11g, managing a model of more than 150 tables, sequences, constraints, audit triggers, and PL/SQL packages.<span class=experience-item-gap></span>- Diagnosis and resolution of incidents in loading and processing file tasks, identifying problems in both the application logic and the database layer.<span class=experience-item-gap></span>- Automation of report generation and distribution using Apache POI for Excel and Velocity for HTML email generation.<span class=experience-item-gap></span>- Development of unit tests using JUnit 4, Mockito 2, and PowerMock, contributing to code maintainability and reliability.<span class=experience-item-gap></span>- Analysis and monitoring of code quality through SonarQube.<span class=experience-item-gap></span>- Preparation and maintenance of technical documentation and architecture/design diagrams using Enterprise Architect.<span class=experience-item-gap></span>- Participation in the complete lifecycle of the application, from implementing new functionalities to integration, testing, and deployment.<br><br>Java - Spring - JavaScript - Oracle SQL Developer"
+            },
+            {
+                "name": "Junior Developer",
+                "company": "NTT DATA Europe & Latam",
+                "date": "[ Dec 2023 - Feb 2024 ]",
+                "info": "Carbajosa de la Sagrada, Salamanca | Spain<br><br>- Development of service utilities.<span class=experience-item-gap></span>- Database maintenance and management.<br><br>Main technologies of the service:<br>Oracle SQL Developer - Visual Basic - Vue.js - Python"
+            },
+            {
+                "name": "Maintenance Technician (FCT)",
+                "company": "Peñaranda de Bracamonte Town Hall",
+                "date": "[ Apr 2021 - Jun 2021 ]",
+                "info": "Peñaranda de Bracamonte, Salamanca | Spain<br><br>- Maintenance and repair of computer equipment<span class=experience-item-gap></span>- Network maintenance"
+            }
+        ]
+    },
+    "projects": {
+        "items": [
+            {
+                "name": "ATOMCRAWLER",
+                "href": "/projects/AtomCrawler.html",
+                "external": false,
+                "info": "An ETL system that performs web scraping to collect, structure, and process data about nuclear plants worldwide.",
+                "tech": "Python | Pandas | Matplotlib | Beautifulsoup"
+            },
+            {
+                "name": "APYSHELF",
+                "href": "/projects/ApyShelf.html",
+                "external": false,
+                "info": "Web application with a REST API using Django REST Framework and React + Vite.",
+                "tech": "Python | Django | React | JavaScript | SQLite"
+            },
+            {
+                "name": "FIXGARAGE",
+                "href": "/projects/FixGarage.html",
+                "external": false,
+                "info": "Web application that performs basic CRUD operations using Django.",
+                "tech": "Python | Django | JavaScript | SQLite"
+            },
+            {
+                "name": "GRAVE-LOCK",
+                "href": "/projects/Grave-Lock.html",
+                "external": false,
+                "info": "Cybersecurity tool designed for password encryption and dictionary-based hash decryption.",
+                "tech": "Python | Hashlib"
+            },
+            {
+                "name": "DATASHES",
+                "href": "https://github.com/SpinBath/Datashes",
+                "external": true,
+                "info": "Python tool that uses PySpark to analyze log files from a web server.",
+                "tech": "Python | PySpark | Matplotlib",
+                "badge": "[ Under development ]"
+            }
+        ]
     },
     "education": {
-        "title-1": "Specialization in Cybersecurity in Information Technology Environments (CETI)",
-        "title-2": "Multiplatform Application Development (DAM)",
-        "title-3": "Microcomputer Systems and Networks (SMR)"
+        "items": [
+            {
+                "title": "Specialization in Cybersecurity in Information Technology Environments (CETI)",
+                "date": "[ 2023 - 2024 ]",
+                "center": "IES Venancio Blanco | Salamanca"
+            },
+            {
+                "title": "Multiplatform Application Development (DAM)",
+                "date": "[ 2021 - 2023 ]",
+                "center": "IES Venancio Blanco | Salamanca"
+            },
+            {
+                "title": "Microcomputer Systems and Networks (SMR)",
+                "date": "[ 2019 - 2021 ]",
+                "center": "IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte"
+            }
+        ]
+    },
+    "contact": {
+        "items": [
+            {
+                "label": "EMAIL",
+                "value": "david.sanchezalb@gmail.com",
+                "href": "mailto:david.sanchezalb@gmail.com"
+            },
+            {
+                "label": "LINKEDIN",
+                "value": "linkedin.com/in/d-vid",
+                "href": "https://www.linkedin.com/in/d-vid/"
+            },
+            {
+                "label": "GITHUB",
+                "value": "github.com/SpinBath",
+                "href": "https://github.com/SpinBath"
+            }
+        ]
     }
 }

@@ -4,15 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="shortcut icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="css/styles.css">
-
     <title>David Sánchez | PORTFOLIO</title>
 </head>
 
 <body>
-
     <div id="popup" class="popup">
         <div class="popup-content">
             <h2>DAVID SÁNCHEZ | PORTFOLIO</h2>
@@ -21,15 +18,19 @@
     </div>
 
     <div id="container">
+        <aside id="contact" aria-label="Social media links">
+            <a href="https://github.com/SpinBath" aria-label="GitHub">
+                <img id="github" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/d-vid/" aria-label="LinkedIn">
+                <img id="linkedin" alt="LinkedIn" />
+            </a>
+            <a href="mailto:david.sanchezalb@gmail.com" aria-label="Email">
+                <img id="gmail" alt="Email" />
+            </a>
+        </aside>
 
-        <div id="contact">
-            <a href="https://github.com/SpinBath"><img id="github" /></a>
-            <a href="https://www.linkedin.com/in/d-vid/"><img id="linkedin" /></a>
-            <a href="mailto:david.sanchezalb@gmail.com"><img id="gmail" /></a>
-        </div>
-
-
-        <div id="main-div">
+        <main id="main-div">
             <div id="options">
                 <div class="theme-btn" onclick="changeTheme('light')">
                     <div class="light-box"></div>
@@ -40,157 +41,50 @@
                     <div class="text">DARK</div>
                 </div>
                 <div id="div-language-opt">
-                    <select id="select-lang">
+                    <select id="select-lang" aria-label="Language selector">
                         <option value="es">ES</option>
                         <option value="en">EN</option>
                     </select>
                 </div>
             </div>
 
-            <div id="about-me">
-
-                <p id="name">DAVID SÁNCHEZ</p>
-                <p id="job">PYTHON DEVELOPER</p>
-
+            <header id="about-me">
+                <p id="name" data-i18n="about.name">DAVID SÁNCHEZ</p>
+                <p id="job" data-i18n="about.role">PYTHON DEVELOPER</p>
                 <p id="info" data-i18n="about.info">
                     Graduado en Ciberseguridad en Entornos de la Tecnología de la Información con el interés de poder
-                    desarrollar mi carrera carrera profesional en el desarrollo de software y la ciberseguridad.<br><br>
-                    Cuento con sólidos conocimientos en Python y experiencia con tecnologías como Django, Pandas,
-                    PySpark, React,entre otras. <br><br> He participado en el desarrollo de aplicaciones web, APIs
-                    REST,procesos ETL, herramientas de web scraping y soluciones orientadas a la ciberseguridad.
+                    desarrollar mi carrera profesional en el desarrollo de software y la ciberseguridad.
                 </p>
                 <p id="cv">
                     <a href="assets/docs/CV - David Sánchez Albarrán.pdf" target="_blank" download>
-                        <button data-i18n="about.cv">Descargar CV</button></a>
+                        <button data-i18n="about.cv">Descargar CV</button>
+                    </a>
                 </p>
-            </div>
-            <div id="experience">
-                <p class="title-section">EXPERIENCE</p>
-                <div class="child">
-                    <p class="experience-name" data-i18n="experience.name-1">Junior Developer (FCT)</p>
-                    <p class="experience-company">NTT DATA Salamanca</p>
-                    <p class="experience-date">[ Mar 2023 - May 2023 ]</p>
-                    <p class="experience-info" data-i18n="experience.info-1">
-                        Carbajosa de la Sagrada, Salamanca | Spain
-                        <br><br>
-                        - Development of utilities for the service.<br>
-                        - Database maintenance and management.
-                        <br><br>
-                        Main technologies of the service:
-                        <br>
-                        Oracle SQL Developer - Visual Basic - Vue.js - Python
-                    </p>
-                </div>
-                <div class="child">
-                    <p class="experience-name" data-i18n="experience.name-2">Maintenance Technician (FCT)</p>
-                    <p class="experience-company" data-i18n="experience.company-2">Peñaranda de Bracamonte Town Hall</p>
-                    <p class="experience-date">[ Abr 2021 - Jun 2021 ]</p>
-                    <p class="experience-info" data-i18n="experience.info-2">
-                        Peñaranda de Bracamonte, Salamanca | Spain
-                        <br><br>
-                        - Maintenance and repair of computer equipment<br>
-                        - Network maintenance
-                    </p>
-                </div>
-            </div>
-            <div id="projects">
-                <p class="title-section">PROJECTS</p>
-                <div class="child">
-                    <a href="/projects/AtomCrawler.html">
-                        <p class="project-name">ATOMCRAWLER</p>
-                    </a>
-                    <p class="project-info" data-i18n="project.info-1">A web scraper that collects, structures, and
-                        processes data on nuclear power plants worldwide.</p>
-                    <p class="project-tech">Python | Pandas | Matplotlib | Beautifulsoup</p>
-                </div>
-                <div class="child">
-                    <a href="/projects/ApyShelf.html">
-                        <p class="project-name">APYSHELF</p>
-                    </a>
-                    <p class="project-info" data-i18n="project.info-2">Web application with a REST API using Django REST
-                        Framework and React + Vite.
-                    </p>
-                    <p class="project-tech">Python | Django | React | JavaScript | SQLite</p>
-                </div>
-                <div class="child">
-                    <a href="/projects/FixGarage.html">
-                        <p class="project-name">FIXGARAGE</p>
-                    </a>
-                    <p class="project-info" data-i18n="project.info-3">Web application that performs basic CRUD
-                        operations using Django.
-                    </p>
-                    <p class="project-tech">Python | Django | JavaScript | SQLite</p>
-                </div>
-                <div class="child">
-                    <a href="/projects/Grave-Lock.html">
-                        <p class="project-name">GRAVE-LOCK</p>
-                    </a>
-                    <p class="project-info" data-i18n="project.info-4">Cybersecurity tool designed for password
-                        encryption, decryption of hashes
-                        using
-                        dictionaries.</p>
-                    <p class="project-tech">Python | Hashlib</p>
-                </div>
+            </header>
 
-                <div class="child">
-                    <a href="https://github.com/SpinBath/Datashes">
-                        <p class="project-name">DATASHES</p>
-                    </a>
-                    <p style="font-weight: bold">[ Under Development ]</p>
-                    <p class="project-info" data-i18n="project.info-5">
-                        Python tool that uses PySpark to analyze log files from a web server.</p>
-                    <p class="project-tech">Python | PySpark | Matplotlib </p>
-                </div>
+            <section id="experience" aria-labelledby="experience-title">
+                <p id="experience-title" class="title-section" data-i18n="sections.experience">EXPERIENCE</p>
+                <div id="experience-list" class="section-list"></div>
+            </section>
 
-            </div>
+            <section id="projects" aria-labelledby="projects-title">
+                <p id="projects-title" class="title-section" data-i18n="sections.projects">PROJECTS</p>
+                <div id="projects-list" class="section-list"></div>
+            </section>
 
-            <div id="education">
-                <p class="title-section">EDUCATION</p>
-                <div class="child">
-                    <p class="education-title" data-i18n="education.title-1">Specialization in Cybersecurity in
-                        Information Technology Environments
-                        (CETI)</p>
-                    <p class="education-date">[ 2023 - 2024 ]</p>
-                    <p class="education-center">IES Venancio Blanco | Salamanca</p>
+            <section id="education" aria-labelledby="education-title">
+                <p id="education-title" class="title-section" data-i18n="sections.education">EDUCATION</p>
+                <div id="education-list" class="section-list"></div>
+            </section>
 
-                </div>
-                <div class="child">
-                    <p class="education-title" data-i18n="education.title-2">Multiplatform Application Development (DAM)
-                    </p>
-                    <p class="education-date">[ 2021 - 2023 ]</p>
-                    <p class="education-center">IES Venancio Blanco | Salamanca</p>
-
-                </div>
-                <div class="child">
-                    <p class="education-title" data-i18n="education.title-3">Microcomputer Systems and Networks (SMR)
-                    </p>
-                    <p class="education-date">[ 2019 - 2021 ]</p>
-                    <p class="education-center">IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte</p>
-
-                </div>
-            </div>
-            <div id="contact-url">
-                <p class="title-section">CONTACT</p>
-                <div class="child">
-                    <p class="contact-title">EMAIL</p>
-                    <p class="contact-info"><a href="mailto:david.sanchezalb@gmail.com"><img
-                                src="assets/images/externo.png" />david.sanchezalb@gmail.com</p></a>
-                    <p class="contact-title">LINKEDIN</p>
-                    <p class="contact-info"><a href="https://www.linkedin.com/in/d-vid/"><img
-                                src="assets/images/externo.png" />linkedin.com/in/d-vid</p></a>
-                    <p class="contact-title">GITHUB</p>
-                    <p class="contact-info"><a href="https://github.com/SpinBath"><img
-                                src="assets/images/externo.png" />github.com/SpinBath</p></a>
-                </div>
-            </div>
-
-        </div>
+            <section id="contact-url" aria-labelledby="contact-title">
+                <p id="contact-title" class="title-section" data-i18n="sections.contact">CONTACT</p>
+                <div id="contact-list" class="section-list"></div>
+            </section>
+        </main>
     </div>
 
-    <script src="js/main.js">
-
-    </script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

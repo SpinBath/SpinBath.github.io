@@ -1,25 +1,117 @@
 {
+    "site": {
+        "title": "DAVID SÁNCHEZ | PORTFOLIO"
+    },
     "about": {
-        "info": "Graduado en Ciberseguridad en Entornos de la Tecnología de la Información con el interés de poder desarrollar mi carrera carrera profesional en el desarrollo de software y la ciberseguridad.<br><br> Cuento con sólidos conocimientos en Python y experiencia con tecnologías como Django, Pandas, PySpark, React, entre otras. <br><br> He participado en el desarrollo de aplicaciones web, APIs REST, procesos ETL, herramientas de web scraping y soluciones orientadas a la ciberseguridad.",
+        "name": "DAVID SÁNCHEZ",
+        "role": "Java Developer & Oracle DBA Support",
+        "info": "Desarrollador de software y soporte de base de datos con experiencia en aplicaciones Java corporativas en el sector de energías renovables.<br><br>Trabajo en el desarrollo y mantenimiento de AIRe (Aplicación de Iberdrola Renovables para Estaciones), una plataforma destinada a la gestión integral de estaciones meteorológicas y equipos de medición, incluyendo la carga de datos y el cálculo de indicadores de disponibilidad y calidad para el área de Renovables de Iberdrola.",
         "cv": "Descargar CV"
     },
-    "experience": {
-        "name-1": "Desarrollador Junior (FCT)",
-        "info-1": "Carbajosa de la Sagrada, Salamanca | España<br><br>- Desarrollo de utilidades para el servicio.<br>- Mantenimiento y gestión de bases de datos.<br><br>Principales tecnologías del servicio:<br>Oracle SQL Developer - Visual Basic - Vue.js - Python",
-        "name-2": "Técnico de Mantenimiento (FCT)",
-        "company-2": "Ayuntamiento de Peñaranda de Bracamonte",
-        "info-2": "Peñaranda de Bracamonte, Salamanca | España<br><br>- Mantenimiento y reparación de equipos informáticos<br>- Mantenimiento de redes"
+    "sections": {
+        "experience": "EXPERIENCIA",
+        "projects": "PROYECTOS",
+        "education": "FORMACIÓN",
+        "contact": "CONTACTO"
     },
-    "project": {
-        "info-1": "Un sistema ETL que realiza web scraping para recoger, estructurar y procesar datos sobre plantas nucleares en todo el mundo.",
-        "info-2": "Aplicación web con una API REST utilizando Django REST Framework y React + Vite.",
-        "info-3": "Aplicación web que realiza operaciones CRUD utilizando Django.",
-        "info-4": "Herramienta de ciberseguridad diseñada para el cifrado de contraseñas y descifrado de hashes usando diccionarios.",
-        "info-5": "Herramienta en Python que utiliza PySpark para analizar archivos de registro de un servidor web."
+    "experience": {
+        "items": [
+            {
+                "name": "Desarrollador Java & Soporte de Base de Datos Oracle",
+                "company": "NTT DATA Europe & Latam",
+                "date": "[ Oct 2025 - Actualidad ]",
+                "info": "Carbajosa de la Sagrada, Salamanca | España<br><br>Desarrollo y mantenimiento de una aplicación corporativa para la gestión integral de estaciones meteorológicas del área de Renovables de Iberdrola, participando en todo el ciclo de desarrollo: backend, persistencia, APIs REST, testing, automatización, documentación y despliegue.<br><br>Responsabilidades y principales aportaciones:<br><br>- Desarrollo y evolución de funcionalidades backend en Java, trabajando sobre una aplicación corporativa de gestión y procesamiento de información meteorológica.<span class=experience-item-gap></span>- Diseño e implementación de APIs y Web Services REST para la integración con la aplicación móvil.<span class=experience-item-gap></span>- Diseño, mantenimiento y evolución de la capa de persistencia sobre Oracle 11g, gestionando un modelo de más de 150 tablas, secuencias, constraints, triggers de auditoría y paquetes PL/SQL.<span class=experience-item-gap></span>- Diagnóstico y resolución de incidencias en procesos de carga y procesamiento de ficheros, identificando problemas tanto en la lógica de aplicación como en la capa de base de datos.<span class=experience-item-gap></span>- Automatización de la generación y distribución de informes mediante Apache POI para Excel y Velocity para la generación de emails HTML.<span class=experience-item-gap></span>- Desarrollo de tests unitarios utilizando JUnit 4, Mockito 2 y PowerMock, contribuyendo a la mantenibilidad y fiabilidad del código.<span class=experience-item-gap></span>- Análisis y seguimiento de la calidad del código mediante SonarQube.<span class=experience-item-gap></span>- Elaboración y mantenimiento de documentación técnica y diagramas de arquitectura/diseño mediante Enterprise Architect.<span class=experience-item-gap></span>- Participación en el ciclo completo de desarrollo y mantenimiento de la aplicación, desde la implementación de nuevas funcionalidades hasta su integración, testing y despliegue.<br><br>Java - Spring - JavaScript - Oracle SQL Developer"
+            },
+            {
+                "name": "Desarrollador Junior",
+                "company": "NTT DATA Europe & Latam",
+                "date": "[ Mar 2023 - May 2023 ]",
+                "info": "Carbajosa de la Sagrada, Salamanca | España<br><br>- Desarrollo de utilidades para el servicio.<span class=experience-item-gap></span>- Mantenimiento y gestión de bases de datos.<br><br>Principales tecnologías del servicio:<br>Oracle SQL Developer - Visual Basic - Vue.js - Python"
+            },
+            {
+                "name": "Técnico de Mantenimiento (FCT)",
+                "company": "Ayuntamiento de Peñaranda de Bracamonte",
+                "date": "[ Abr 2021 - Jun 2021 ]",
+                "info": "Peñaranda de Bracamonte, Salamanca | España<br><br>- Mantenimiento y reparación de equipos informáticos<span class=experience-item-gap></span>- Mantenimiento de redes"
+            }
+        ]
+    },
+    "projects": {
+        "items": [
+            {
+                "name": "ATOMCRAWLER",
+                "href": "/projects/AtomCrawler.html",
+                "external": false,
+                "info": "Un sistema ETL que realiza web scraping para recoger, estructurar y procesar datos sobre plantas nucleares en todo el mundo.",
+                "tech": "Python | Pandas | Matplotlib | Beautifulsoup"
+            },
+            {
+                "name": "APYSHELF",
+                "href": "/projects/ApyShelf.html",
+                "external": false,
+                "info": "Aplicación web con una API REST utilizando Django REST Framework y React + Vite.",
+                "tech": "Python | Django | React | JavaScript | SQLite"
+            },
+            {
+                "name": "FIXGARAGE",
+                "href": "/projects/FixGarage.html",
+                "external": false,
+                "info": "Aplicación web que realiza operaciones CRUD utilizando Django.",
+                "tech": "Python | Django | JavaScript | SQLite"
+            },
+            {
+                "name": "GRAVE-LOCK",
+                "href": "/projects/Grave-Lock.html",
+                "external": false,
+                "info": "Herramienta de ciberseguridad diseñada para el cifrado de contraseñas y descifrado de hashes usando diccionarios.",
+                "tech": "Python | Hashlib"
+            },
+            {
+                "name": "DATASHES",
+                "href": "https://github.com/SpinBath/Datashes",
+                "external": true,
+                "info": "Herramienta en Python que utiliza PySpark para analizar archivos de registro de un servidor web.",
+                "tech": "Python | PySpark | Matplotlib",
+                "badge": "[ En desarrollo ]"
+            }
+        ]
     },
     "education": {
-        "title-1": "Especialización en Ciberseguridad en Entornos de la Tecnología de la Información (CETI)",
-        "title-2": "Desarrollo de Aplicaciones Multiplataforma (DAM)",
-        "title-3": "Sistemas Microinformáticos y Redes (SMR)"
+        "items": [
+            {
+                "title": "Especialización en Ciberseguridad en Entornos de la Tecnología de la Información (CETI)",
+                "date": "[ 2023 - 2024 ]",
+                "center": "IES Venancio Blanco | Salamanca"
+            },
+            {
+                "title": "Desarrollo de Aplicaciones Multiplataforma (DAM)",
+                "date": "[ 2021 - 2023 ]",
+                "center": "IES Venancio Blanco | Salamanca"
+            },
+            {
+                "title": "Sistemas Microinformáticos y Redes (SMR)",
+                "date": "[ 2019 - 2021 ]",
+                "center": "IES Germán Sánchez Ruipérez | Peñaranda de Bracamonte"
+            }
+        ]
+    },
+    "contact": {
+        "items": [
+            {
+                "label": "EMAIL",
+                "value": "david.sanchezalb@gmail.com",
+                "href": "mailto:david.sanchezalb@gmail.com"
+            },
+            {
+                "label": "LINKEDIN",
+                "value": "linkedin.com/in/d-vid",
+                "href": "https://www.linkedin.com/in/d-vid/"
+            },
+            {
+                "label": "GITHUB",
+                "value": "github.com/SpinBath",
+                "href": "https://github.com/SpinBath"
+            }
+        ]
     }
 }
